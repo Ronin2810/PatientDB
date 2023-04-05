@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  th div {
+    font-weight: normal;
+  }
+  
+  td div {
+    font-style: italic;
+    margin-bottom: 4px;
+  }
+  
+  td div:first-child {
+    font-weight: bold;
+  }
+  

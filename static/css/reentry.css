@@ -1,0 +1,74 @@
+/* body{
+    background-color: aquamarine;
+} */
+
+/* body and form styles */
+body {
+    background-color: #202020;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+/* input styles */
+input[type="text"], input[type="number"] {
+    background-color: #404040;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* placeholder styles */
+::placeholder {
+    color: #bbb;
+}
+
+/* table styles */
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}

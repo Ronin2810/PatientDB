@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/home.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="home">
+      <h3>Welcome To Patient Database</h3>
+      <p style="color: green;"><%= msg%></p>
+      <div class="r1">
+        <div class="crud-ops"><a href="/create">Create Patient Entry</a></div>
+        <div class="crud-ops">
+          <a href="/reentry">Re-Entry (Existing Patient)</a>
+        </div>
+        <br />
+      </div>
+      <div class="r2">
+        <div class="crud-ops"><a href="/update">Update Patient Entry</a></div>
+        <div class="crud-ops"><a href="/read">Show Patient Entries</a></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <footer>developed by Adityapatildev</footer>
+    </div>
+  </body>
+</html>

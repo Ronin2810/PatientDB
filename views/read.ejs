@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/read.css">
+    <title>Read</title>
+</head>
+<body>
+    <form action="/search" method="post">
+        Type: <br>
+        <select name="ptype" id="ptype">
+            <option value="none">None</option>
+            <option value="ayur">Ayurvedic</option>
+            <option value="gp">GP</option>
+            <option value="alc">Alcohol Rehab</option>
+        </select><br>
+        Date: <br>
+        <input type="date" name="pdate" id=""><br>
+        Name: <br>
+        <input type="text" name="pname" id=""><br>
+        <input type="submit" value="SEARCH"><br>
+    </form>
+
+    <!-- display here  -->
+    <table border="1">
+        <tr>
+            <th>SrNo.</th>
+            <th>Date</th>
+            <th>Name</th>
+            <th>Symptom</th>
+            <th>Medicine</th>
+            <th>Bill</th>
+            <th>Due</th>
+        </tr>
+        <% patients.forEach(function(i,ind){ %>
+            <tr>
+                <td><%=ind+1%></td>
+                <td><%= i.date%></td>
+                <td><%= i.name%></td>
+                <td><%= i.sym%></td>
+                <td><%= i.med%></td>
+                <td><%= i.bill%></td>
+                <td><%= i.due%></td>
+            </tr>
+        <% }) %>
+        <tr></tr>
+    </table>
+    
+</body>
+</html>

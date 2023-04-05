@@ -1,0 +1,55 @@
+/* body{
+    background-color: aquamarine;
+} */
+
+body {
+    background-color: #292929;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h3 {
+    color: #fff;
+    margin-top: 0;
+  }
+  
+  hr {
+    border-top: 1px solid #aaa;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  label {
+    color: #fff;
+  }
+  
+  input[type="submit"] {
+    background-color: #0080ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin-top: 16px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0073e6;
+  }
+  

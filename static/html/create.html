@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Entry</title>
+</head>
+<body>
+    <form action="">
+        <h3>Patient Information</h3><hr>
+        Enter Name: <br>
+        <input type="text" name="pname" placeholder = "Patient Name" id="pname"><br>
+        Gender: <br>
+        <input type="radio" name="gender" id="male"><label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female"><label for="female">Female</label><br>
+        Enter Phone Number: <br>
+        <input type="number" name="pno" id="pno" placeholder="Phone Number"><br>
+        Enter E-mail ID: <br>
+        <input type="email" name="pemail" id="pemail" placeholder="Email">
+        <hr>
+        <h3>Diagnosis</h3><hr>
+        Type: <br>
+        <select name="ptype" id="ptype">
+            <option value="ayur">Ayurvedic</option>
+            <option value="gp">GP</option>
+            <option value="alc">Alcohol Rehab</option>
+        </select><br>
+<hr>
+        <!-- --------------Also include in re-entry---------------- -->
+        Symptoms: <br> <input type="text" name="sym" id="sym" placeholder="Symptoms"><br>
+        Medicines: <br> <input type="text" name="meds" id="meds" placeholder="Medicines"><br>
+        Bill: <br> <input type="number" name="bill" id="bill" placeholder="Bill"><br>
+        Due: <br> <input type="number" name="due" id="due" placeholder="Due"><br>
+<hr>
+        <input type="submit" value="SUBMIT"><br>
+    </form>
+</body>
+</html>
