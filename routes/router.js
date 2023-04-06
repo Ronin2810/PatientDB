@@ -48,9 +48,49 @@ router.get("/read", (req, res) => {
             console.log(err);
         })
 });
-router.get("/update", (req, res) => {
-    res.render("update");
+
+router.get('/update', (req, res) => {
+    res.render('updatepg');
+})
+
+let tp;
+router.post("/goupdate", (req, res) => {
+    const { pname } = req.body;
+    tp = pname;
+    patient_schema.findOne({ pname: pname }).then((result) => {
+        const name = result.pname;
+        const age = result.page;
+        const number = result.pno
+        const email = result.email;
+        const due = result.totaldue;
+        res.render("update", { pname: name, page: age, pno: number, email: email, due: due });
+    })
+        .catch((err) => {
+            console.log(err);
+        })
 });
+
+router.post("/updateprofile", (req, res) => {
+    const { pname, gender, page, pno, email, due } = req.body;
+    patient_schema.updateOne({ pname: tp }, {
+        $set: {
+            pname: pname,
+            gender: gender,
+            page: page,
+            pno: pno,
+            email: email,
+            totaldue: due
+        }
+    }).then(() => {
+
+        res.render('home', { msg: "Patient Profile Updated Successfully" });
+    })
+        .catch((err) => {
+            console.log(err);
+        })
+})
+
+
 
 router.post("/home_create", (req, res) => {
     const { pname, gender, page, pno, pemail, ptype, sym, meds, bill, due } =
@@ -270,6 +310,10 @@ router.post('/search', (req, res) => {
                 console.log(err);
             })
     }
+})
+
+router.post('/update', (req, res) => {
+
 })
 
 

@@ -29,7 +29,7 @@ mongoose.connect(db_name)
 app.set('view engine','ejs')
 const port = process.env.port || 8080
 app.listen(port,()=>{
-    console.log(`Server listening on port ${port}`);
+    console.log(`Server listening on port ${port} ...Go to http://localhost:${port}`);
 })
 
 app.use('/',router)

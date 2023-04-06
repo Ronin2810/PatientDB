@@ -8,6 +8,22 @@
     <title>Update</title>
 </head>
 <body>
-    update page
+    <h3>Update profile</h3>
+    <form action="/updateprofile" method="post">
+        Name: <br>
+        <input type="text" name="pname" value = '<%=pname%>'id="f1"> <br>
+        Gender:  <br>
+        <input type="radio" name="gender" id="f2">Male <br>
+        <input type="radio" name="gender" id="f3">Female <br>
+        Age: <br>
+        <input type="number" name="page" value = '<%=page%>'id="f4"><br>
+        Phone Number: <br>
+        <input type="number" name="pno" value = '<%=pno%>'id="f5"><br>
+        Email: <br>
+        <input type="email" name="email" value = '<%=email%>'id="f6"><br>
+        Total Due: <br>
+        <input type="number" name="due" value = '<%=due%>'id="f7"><br>
+        <input type="submit" value="UPDATE"><br>
+    </form>
 </body>
 </html>
